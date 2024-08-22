@@ -44,3 +44,5 @@ File: style.css
 @import 'scss/fonts/tabler-icons.min.css';
 @import 'scss/fonts/phosphor/duotone/style.css';
 @import "tailwind";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

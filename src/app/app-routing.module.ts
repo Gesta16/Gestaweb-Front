@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './theme/layout/admin/admin.component';
 import { GuestComponent } from './theme/layout/guest/guest.component';
+import { LandingComponent } from './inicio/landing/landing.component';
 
 const routes: Routes = [
   {
@@ -26,9 +27,14 @@ const routes: Routes = [
         loadComponent: () => import('./demo/elements/element-color/element-color.component')
       },
       {
+        path: 'landing',
+        component: LandingComponent
+      },
+      {
         path: 'sample-page',
         loadComponent: () => import('./demo/sample-page/sample-page.component')
-      }
+      },
+      
     ]
   },
   {

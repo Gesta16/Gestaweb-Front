@@ -18,6 +18,11 @@ import { NavItemComponent } from './theme/layout/admin/navigation/nav-content/na
 import { SharedModule } from './theme/shared/shared.module';
 import { ConfigurationComponent } from './theme/layout/admin/configuration/configuration.component';
 import { GuestComponent } from './theme/layout/guest/guest.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ModalDialogComponent } from './inicio/modal-dialog/modal-dialog.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -35,8 +40,8 @@ import { GuestComponent } from './theme/layout/guest/guest.component';
     ConfigurationComponent,
     GuestComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
-  providers: [NavigationItem],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule, MatButtonModule, MatDialogModule, ModalDialogComponent],
+  providers: [NavigationItem, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
