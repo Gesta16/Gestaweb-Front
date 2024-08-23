@@ -22,6 +22,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ModalDialogComponent } from './inicio/modal-dialog/modal-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogContent } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     ConfigurationComponent,
     GuestComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule, MatButtonModule, MatDialogModule, ModalDialogComponent],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule, MatButtonModule, MatDialogModule, ModalDialogComponent, MatDialogContent, CommonModule],
   providers: [NavigationItem, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })

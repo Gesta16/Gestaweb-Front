@@ -1,37 +1,37 @@
 <p>modal-dialog works!</p>
 
-<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3 p-6 text-center relative">
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
+    <div class="bg-white rounded-lg w-11/12 md:w-3/4 lg:w-1/3 p-6 text-center relative max-h-full overflow-y-auto">
       <!-- Botón de cerrar -->
-      <button  class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+      <button (click)="cerrar()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-3xl p-2"> 
         &times;
       </button>
   
       <!-- Título -->
-      <h2 class="text-2xl font-semibold mb-4">Título del Modal</h2>
+      <h2 class="text-2xl font-semibold mb-4">Querida futura mamá,</h2>
   
       <!-- Primer párrafo -->
       <p class="mb-4">
-        Este es el primer párrafo. Se recomienda que cuides cada aspecto de tu bienestar para asegurar un embarazo saludable.
+        Cada día que llevas vida dentro de ti es un recordatorio de ti fuerza y amor incondicional, Es increíble que presenciar como tu cuerpo se transforma para dar vida a algo tan maravilloso. Confía en cada paradita y en cada latido que escuchas; son señales de que este viaje es verdaderamente milagroso.
       </p>
   
       <!-- Segundo párrafo -->
       <p class="mb-4">
-        En esta etapa, estar informada es crucial. Mantén una alimentación equilibrada, realiza ejercicio moderado y asiste a tus controles médicos regularmente.
+        Estás creando algo increíble, un vinculo eterno que transcenderá todos los límites. Mantén tu mente en positivo y tu corazón lleno de esperanza, porque cada paso que das hacia adelante en este camino es un testimonio de tu valentía t dedicación, Eres increíble y estas haciendo un trabajo asombroso, nutriendo y protegiendo esta pequeña vida con cada pensamiento amoroso.
       </p>
   
       <!-- Tercer párrafo -->
       <p class="mb-4">
-        Cada pequeño esfuerzo cuenta.
+        Con cariño, Gestaweb
       </p>
   
       <!-- Imagen -->
-      <img src="assets/imagen.png" alt="Imagen descriptiva" class="w-2/3 mx-auto mt-6"> <!-- Cambia la ruta de la imagen según corresponda -->
+      <img src="assets/images/inicio/imagen_modal_landing.jpg" alt="Imagen descriptiva" class="w-full md:w-4/5 lg:w-3/5 mx-auto mt-8"> <!-- Cambia la ruta de la imagen según corresponda -->
   
       <!-- Botón de cerrar -->
-      <button  class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-md">
+      <button (click)="cerrar()"  class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-md">
         Cerrar
       </button>
     </div>
 </div>
-  

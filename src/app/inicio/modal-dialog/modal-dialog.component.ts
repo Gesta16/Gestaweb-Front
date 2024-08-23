@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogContent } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-modal-dialog',
@@ -9,9 +9,10 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dial
   styleUrl: './modal-dialog.component.scss'
 })
 export class ModalDialogComponent {
-  constructor(public _matDialogRef: MatDialogRef<ModalDialogComponent>, @Inject(MAT_DIALOG_DATA) public data:any){
-
-    
-    
+  constructor(public _matDialogRef: MatDialogRef<ModalDialogComponent>){
   }
+  cerrar():void{
+    this._matDialogRef.close();
+  }
+
 }

@@ -26,10 +26,7 @@ const routes: Routes = [
         path: 'color',
         loadComponent: () => import('./demo/elements/element-color/element-color.component')
       },
-      {
-        path: 'landing',
-        component: LandingComponent
-      },
+      
       {
         path: 'sample-page',
         loadComponent: () => import('./demo/sample-page/sample-page.component')
@@ -44,6 +41,10 @@ const routes: Routes = [
       {
         path: 'guest',
         loadChildren: () => import('./demo/pages/authentication/authentication.module').then((m) => m.AuthenticationModule)
+      },
+      {
+        path: 'landing',
+        component: LandingComponent
       }
     ]
   }

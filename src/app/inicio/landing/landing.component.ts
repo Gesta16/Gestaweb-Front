@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
+import { ModalDialogAlimentacionComponent } from '../modal-dialog-alimentacion/modal-dialog-alimentacion.component';
+import { ModalDialogEjercicioComponent } from '../modal-dialog-ejercicio/modal-dialog-ejercicio.component';
+import { ModalDialogCrecimientoBebeComponent } from '../modal-dialog-crecimiento-bebe/modal-dialog-crecimiento-bebe.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
@@ -17,9 +21,23 @@ export class LandingComponent {
     this._matDialog.open(ModalDialogComponent)
   }
 
+  abrirModalAlimentacion():void{
+    this._matDialog.open(ModalDialogAlimentacionComponent)
+  }
 
-  cancelar() {
-    this._matDialog.closeAll();
+  abrirModalEjercicio():void{
+    this._matDialog.open(ModalDialogEjercicioComponent)
+  }
+
+  abrirModalCrecimientoBebe():void{
+    this._matDialog.open(ModalDialogCrecimientoBebeComponent)
+  }
+
+  isSmallScreen: boolean = window.innerWidth < 1024;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.isSmallScreen = event.target.innerWidth < 1024;
   }
 
 }

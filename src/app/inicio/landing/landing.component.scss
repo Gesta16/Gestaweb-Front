@@ -1,0 +1,13 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.logo {
+    width: 150px;
+    height: 60px;
+}
+
+.button-sesion{
+    margin-right: 50px;
+}

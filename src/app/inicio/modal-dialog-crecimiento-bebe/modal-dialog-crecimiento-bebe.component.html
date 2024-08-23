@@ -1,0 +1,58 @@
+<p>modal-dialog-crecimiento-bebe works!</p>
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
+  <div class="bg-white rounded-lg w-11/12 md:w-3/4 lg:w-2/3 p-8 relative max-h-full overflow-y-auto">
+    <!-- Botón de cerrar -->
+    <button (click)="cerrar()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-3xl">
+      &times;
+    </button>
+
+    <!-- Título principal centrado -->
+    <h2 class="text-3xl font-semibold text-center mb-8">Desarrollo del bebe</h2>
+
+    <!-- Contenedor de los rectángulos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Primer grupo de 4 rectángulos (primera fila) -->
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">1. Concepción:</h3>
+        <p class="text-gray-600">Ocurre cuando un óvulo fertilizado por un espermatozoide se implanta en el útero de la mujer.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">2. Embrionaria:</h3>
+        <p class="text-gray-600">Después de la concepción, el embrión se forma con rápida división celular y desarrolla sistemas corporales básicos como el nervioso, el cardiovascular y el respiratorio.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">3. Fetal:</h3>
+        <p class="text-gray-600">A partir de la novena semana, el embrión se convierte en feto, desarrollando rápidamente órganos complejos, extremidades y sistema nervioso central, con latidos del corazón y movimientos.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">4. Trimestres:</h3>
+        <p class="text-gray-600">El embarazo se divide en tres trimestres: primer trimestre (semanas 1-12): Formación de órganos principales y desarrollo de embrión a feto.</p>
+      </div>
+
+      <!-- Segundo grupo de 4 rectángulos (segunda fila) -->
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        
+        <p class="text-gray-600">Segundo trimestre (semanas 13-26): Crecimiento rápido del feto y perfeccionamiento de órganos y sistemas. Tercer trimestre (semanas 27-40): Preparación para el nacimiento, aumento de peso y desarrollo de reflejos básicos.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">5. Movimiento y crecimiento:</h3>
+        <p class="text-gray-600">A medida que avanza el embarazo, el bebé crece, se mueve, desarrolla patrones de sueño y vigilia, y responde a la voz de la madre.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">6. Preparación para el parto:</h3>
+        <p class="text-gray-600">En las últimas semanas del embarazo, el bebé se posiciona para el parto y el cuerpo de la madre se prepara con cambios como la dilatación del cuello uterino y las contracciones.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 class="text-base font-semibold mb-2">7. Nacimiento</h3>
+        <p class="text-gray-600">Finalmente, después de aproximadamente 40 semanas de desarrollo, el bebé nace. Este proceso marca el comienzo de una nueva fase de crecimiento y desarrollo fuera del útero materno.</p>
+      </div>
+    </div>
+  </div>
+</div>
