@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminComponent } from './theme/layout/admin/admin.component';
+import { MenuComponent } from './superadmin/pages/menu/menu.component';
 import { NavigationItem } from './superadmin/pages/menu/navigation/navigation';
 import { NavBarComponent } from './superadmin/pages/menu/nav-bar/nav-bar.component';
 import { NavLeftComponent } from './superadmin/pages/menu/nav-bar/nav-left/nav-left.component';
@@ -21,7 +21,7 @@ import { SpinnerComponent } from './theme/shared/components/spinner/spinner.comp
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
+    MenuComponent,
     NavBarComponent,
     NavLeftComponent,
     NavRightComponent,

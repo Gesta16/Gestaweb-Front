@@ -7,8 +7,6 @@ import { BerryConfig } from '../../../app-config';
 
 @Component({
   selector: 'app-menu',
-  standalone: true,
-  imports: [],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
