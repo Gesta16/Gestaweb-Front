@@ -1,9 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
-import { ModalDialogAlimentacionComponent } from '../modal-dialog-alimentacion/modal-dialog-alimentacion.component';
-import { ModalDialogEjercicioComponent } from '../modal-dialog-ejercicio/modal-dialog-ejercicio.component';
-import { ModalDialogCrecimientoBebeComponent } from '../modal-dialog-crecimiento-bebe/modal-dialog-crecimiento-bebe.component';
+import { ModalDialogComponent } from '../../modal-dialog/modal-dialog.component';
+import { ModalDialogAlimentacionComponent } from '../../modal-dialog-alimentacion/modal-dialog-alimentacion.component';
+import { ModalDialogEjercicioComponent } from '../../modal-dialog-ejercicio/modal-dialog-ejercicio.component';
+import { ModalDialogCrecimientoBebeComponent } from '../../modal-dialog-crecimiento-bebe/modal-dialog-crecimiento-bebe.component';
 import { CommonModule } from '@angular/common';
 
 @Component({

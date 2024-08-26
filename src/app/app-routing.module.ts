@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/pages/login/login.component';
+import { LandingComponent } from './inicio/pages/landing/landing.component';
 
 const routes: Routes = [
   {
@@ -26,9 +27,12 @@ const routes: Routes = [
   },
   {
     path: 'operario',
-    loadChildren:() => import('./operario/operario.module').then(m => m.OperarioModule)
+    loadChildren: () => import('./operario/operario.module').then(m => m.OperarioModule)
+  },
+  {
+    path: 'landing',
+    component: LandingComponent
   }
-  
 ];
 
 @NgModule({
