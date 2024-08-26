@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { AddSuperAdminComponent } from './pages/add-super-admin/add-super-admin.component';
+import { AddUsuariosComponent } from './pages/formularios/add-usuarios/add-usuarios.component';
 
-const routes:Routes = [
-  {
-    path: '',
+const routes: Routes = [
+  
+  { path: '', 
     children: [
-      {path: 'add-superAdmin', component:AddSuperAdminComponent}
+      { path: 'add-usuario', component: AddUsuariosComponent}
     ]
   }
 ]
@@ -18,8 +18,8 @@ const routes:Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class SuperadminRoutingModule {
-  static getRoutes(): Routes{
+export class OperarioRoutingModule { 
+  static getRotes(): Routes{
     return routes;
   }
- }
+}

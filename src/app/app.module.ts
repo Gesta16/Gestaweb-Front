@@ -4,20 +4,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './superadmin/pages/menu/menu.component';
-import { NavigationItem } from './superadmin/pages/menu/navigation/navigation';
-import { NavBarComponent } from './superadmin/pages/menu/nav-bar/nav-bar.component';
-import { NavLeftComponent } from './superadmin/pages/menu/nav-bar/nav-left/nav-left.component';
-import { NavRightComponent } from './superadmin/pages/menu/nav-bar/nav-right/nav-right.component';
-import { NavigationComponent } from './superadmin/pages/menu/navigation/navigation.component';
-import { NavLogoComponent } from './superadmin/pages/menu/nav-bar/nav-logo/nav-logo.component';
-import { NavContentComponent } from './superadmin/pages/menu/navigation/nav-content/nav-content.component';
-import { NavGroupComponent } from './superadmin/pages/menu/navigation/nav-content/nav-group/nav-group.component';
-import { NavCollapseComponent } from './superadmin/pages/menu/navigation/nav-content/nav-collapse/nav-collapse.component';
-import { NavItemComponent } from './superadmin/pages/menu/navigation/nav-content/nav-item/nav-item.component';
+import { MenuComponent } from './inicio/pages/menu/menu.component';
+import { NavigationItem } from './inicio/pages/menu/navigation/navigation';
+import { NavBarComponent } from './inicio/pages/menu/nav-bar/nav-bar.component';
+import { NavLeftComponent } from './inicio/pages/menu/nav-bar/nav-left/nav-left.component';
+import { NavRightComponent } from './inicio/pages/menu/nav-bar/nav-right/nav-right.component';
+import { NavigationComponent } from './inicio/pages/menu/navigation/navigation.component';
+import { NavLogoComponent } from './inicio/pages/menu/nav-bar/nav-logo/nav-logo.component';
+import { NavContentComponent } from './inicio/pages/menu/navigation/nav-content/nav-content.component';
+import { NavGroupComponent } from './inicio/pages/menu/navigation/nav-content/nav-group/nav-group.component';
+import { NavCollapseComponent } from './inicio/pages/menu/navigation/nav-content/nav-collapse/nav-collapse.component';
+import { NavItemComponent } from './inicio/pages/menu/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
 import { GuestComponent } from './theme/layout/guest/guest.component';
 import { SpinnerComponent } from './theme/shared/components/spinner/spinner.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import { SpinnerComponent } from './theme/shared/components/spinner/spinner.comp
     SpinnerComponent
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
-  providers: [NavigationItem],
+  providers: [NavigationItem, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
