@@ -1,0 +1,82 @@
+<p>modal-dialog-ejercicio works!</p>
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
+  <div class="bg-white rounded-lg w-11/12 md:w-3/4 lg:w-2/3 p-8 relative max-h-full overflow-y-auto">
+    <!-- Botón de cerrar -->
+    <button (click)="cerrar()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-3xl">
+      &times;
+    </button>
+
+    <!-- Título principal centrado -->
+    <h2 class="text-3xl font-semibold text-center mb-8">Recomendaciones de ejercicio regular</h2>
+
+    <div class="flex flex-col lg:flex-row justify-between">
+      <!-- Sección izquierda -->
+      <div class="w-full lg:w-1/2 mb-8 lg:mb-0 space-y-6">
+        <!-- Primer Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">1. Caminar:</h3>
+          <p class="text-gray-600 text-left">
+            Una de las formas más sencillas y seguras de ejercicio. Ayuda a mantener el corazón fuerte y mejorar el estado de ánimo.
+          </p>
+        </div>
+
+        <!-- Segundo Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">2. Ejercicio de Respiración y Relajación:</h3>
+          <p class="text-gray-600 text-left">
+            Practicar técnicas de respiración profunda y relajación para reducir el estrés y prepararse para le parto.
+          </p>
+        </div>
+
+        <!-- Tercer Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">3. Ejercicios de Estiramiento:</h3>
+          <p class="text-gray-600 text-left">
+            Estiramientos suaves para mejorar la flexibilidad y aliviar la tensión muscular. Ejemplos incluye estiramiento de cuello, espalda, cadenas y piernas.
+          </p>
+        </div>
+
+        <!-- Subtítulo centrado -->
+        <div class="text-center mt-6">
+          <h3 class="text-xl font-semibold">Consejos Prácticos</h3>
+        </div>
+
+        <!-- Cuarto y Quinto Subtítulo con Párrafos -->
+        <div>
+          <h3 class="text-xl font-semibold">1. Hidratación</h3>
+          <p class="text-gray-600 text-left">
+            Beber suficiente agua antes, durante y después del ejercicio para mantenerse bien hidratada.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sección derecha -->
+      <div class="w-full lg:w-1/2 flex flex-col items-center">
+
+        <!-- Primer Subtítulo y Párrafo -->
+        <div class="text-center">
+          <h3 class="text-xl font-semibold">2. Evitar Ejercicios de Alto Impacto</h3>
+          <p class="text-gray-600 text-left">
+            Evitar actividades de alto impacto, saltos y ejercicios que impliquen riesgo de caídas.
+          </p>
+        </div>
+        <br>
+        <!-- Imagen centrada -->
+        <img src="assets/images/inicio/imagen_modal_ejercicio.jpg" alt="Descripción de la imagen" class="w-4/5 lg:w-2/3 mb-6">
+
+        <!-- Párrafo centrado debajo de la imagen -->
+        <p class="text-gray-600 text-center">
+          ¡Muévete y vive un embarazo más feliz y saludable!
+        </p>
+      </div>
+    </div>
+
+    <!-- Botón de cerrar al final -->
+    <div class="text-center mt-8">
+      <button (click)="cerrar()" class="bg-blue-500 text-white py-2 px-6 rounded-md">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>

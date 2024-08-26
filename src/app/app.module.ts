@@ -17,6 +17,14 @@ import { NavCollapseComponent } from './inicio/pages/menu/navigation/nav-content
 import { NavItemComponent } from './inicio/pages/menu/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
 import { GuestComponent } from './theme/layout/guest/guest.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ModalDialogComponent } from './inicio/modal-dialog/modal-dialog.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogContent } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
+
+
 import { SpinnerComponent } from './theme/shared/components/spinner/spinner.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
@@ -35,6 +43,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     GuestComponent,
     SpinnerComponent
   ],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule, MatButtonModule, MatDialogModule, ModalDialogComponent, MatDialogContent, CommonModule],
   imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
   providers: [NavigationItem, provideAnimationsAsync()],
   bootstrap: [AppComponent]

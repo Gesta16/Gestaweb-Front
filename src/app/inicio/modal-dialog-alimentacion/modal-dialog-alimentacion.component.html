@@ -1,0 +1,81 @@
+<p>modal-dialog-alimentacion works!</p>
+
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
+  <div class="bg-white rounded-lg w-11/12 md:w-3/4 lg:w-2/3 p-8 relative max-h-full overflow-y-auto">
+    <!-- Botón de cerrar -->
+    <button (click)="cerrar()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-3xl">
+      &times;
+    </button>
+
+    <!-- Título principal centrado -->
+    <h2 class="text-3xl font-semibold text-center mb-8">Recomendaciones de alimentación saludable</h2>
+
+    <div class="flex flex-col lg:flex-row justify-between">
+      <!-- Sección izquierda -->
+      <div class="w-full lg:w-1/2 mb-8 lg:mb-0 space-y-6">
+        <!-- Primer Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">1. Dieta Equilibrada:</h3>
+          <p class="text-gray-600 text-left">
+            Incluir una variedad de alimentos de todos los grupos alimenticios: fruta, verdura, proteínas, lácteos, granos integrales y grasa saludables.
+          </p>
+        </div>
+
+        <!-- Segundo Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">2. Proteínas:</h3>
+          <p class="text-gray-600 text-left">
+            Consumir fuentes magras de proteínas como pollo, pescado, carne magra, huevos, frijoles, lentejas y tofu. Las proteínas son esenciales para el crecimiento del bebe.
+          </p>
+        </div>
+
+        <!-- Tercer Subtítulo y Párrafo -->
+        <div>
+          <h3 class="text-xl font-semibold">3. frutas y verduras:</h3>
+          <p class="text-gray-600 text-left">
+            Comer al menos cinco porciones al día, las frutas y verduras son ricas en vitaminas, minerales y fibra.
+          </p>
+        </div>
+
+        <!-- Subtítulo centrado -->
+        <div class="text-center mt-6">
+          <h3 class="text-xl font-semibold">Consejos prácticos</h3>
+        </div>
+
+        <!-- Cuarto y Quinto Subtítulo con Párrafos -->
+        <div>
+          <h3 class="text-xl font-semibold">1. Hidratación:</h3>
+          <p class="text-gray-600 text-left">
+            Beber al menos 8 vasos de agua al día. Mantenerse bien hidratada es fundamental durante el embarazo.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">2. Evitar:</h3>
+          <p class="text-gray-600 text-left">
+            Limitar el consumo de cafeína y evitar el alcohol, alimentos crudos o poco cocidos, y productos lácteos no pasteurizados para prevenir infecciones y complicaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sección derecha -->
+      <div class="w-full lg:w-1/2 flex flex-col items-center">
+        <!-- Imagen centrada -->
+        <img src="assets/images/inicio/imagen_modal_alimento.jpg" alt="Descripción de la imagen" class="w-3/4 lg:w-2/3 mb-6">
+
+        <!-- Párrafo centrado debajo de la imagen -->
+        <p class="text-gray-600 text-center">
+          ¡Cuidar tu alimentación es cuidar a tu bebé! 
+        </p>
+      </div>
+    </div>
+
+    <!-- Botón de cerrar al final -->
+    <div class="text-center mt-8">
+      <button (click)="cerrar()" class="bg-blue-500 text-white py-2 px-6 rounded-md">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
