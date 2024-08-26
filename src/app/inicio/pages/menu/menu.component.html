@@ -1,0 +1,27 @@
+<!-- Este archivo llama lo que se visualiza en la página -->
+
+<!-- Llama el contenido del menú -->
+<app-navigation class="coded-navbar pc-sidebar" [ngClass]="{
+    'navbar-collapsed': navCollapsed,
+    'mob-open': navCollapsedMob
+  }" (NavCollapsedMob)="navMobClick()">
+</app-navigation>
+
+<app-nav-bar (NavCollapse)="this.navCollapsed = !this.navCollapsed" (NavCollapsedMob)="navMobClick()"></app-nav-bar>
+<!-- Llama el encabezado -->
+
+<div class="pc-container">
+    <div class="coded-wrapper">
+        <div class="coded-content">
+            <div class="coded-inner-content">
+
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <router-outlet></router-outlet> <!-- Esto muestra las graficas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pc-menu-overlay" (click)="closeMenu()" (keydown)="handleKeyDown($event)" tabindex="0"></div>
+</div>
