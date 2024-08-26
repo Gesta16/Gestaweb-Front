@@ -18,19 +18,28 @@ export class LandingComponent {
   title = 'modal';
   constructor(private _matDialog: MatDialog){}
   abrirModal():void{
-    this._matDialog.open(ModalDialogComponent)
+    this._matDialog.open(ModalDialogComponent, {
+      enterAnimationDuration: '0ms',
+      exitAnimationDuration: '0ms'
+    })
   }
 
   abrirModalAlimentacion():void{
-    this._matDialog.open(ModalDialogAlimentacionComponent)
+    this._matDialog.open(ModalDialogAlimentacionComponent, {
+      enterAnimationDuration: '0ms',
+      exitAnimationDuration: '0ms'})
   }
 
   abrirModalEjercicio():void{
-    this._matDialog.open(ModalDialogEjercicioComponent)
+    this._matDialog.open(ModalDialogEjercicioComponent, {
+      enterAnimationDuration: '0ms',
+      exitAnimationDuration: '0ms'})
   }
 
   abrirModalCrecimientoBebe():void{
-    this._matDialog.open(ModalDialogCrecimientoBebeComponent)
+    this._matDialog.open(ModalDialogCrecimientoBebeComponent, {
+      enterAnimationDuration: '0ms',
+      exitAnimationDuration: '0ms'})
   }
 
   isSmallScreen: boolean = window.innerWidth < 1024;
