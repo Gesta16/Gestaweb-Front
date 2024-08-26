@@ -10,8 +10,6 @@ import { ChartDataMonthComponent } from './chart-data-month/chart-data-month.com
 
 @Component({
   selector: 'app-default',
-  standalone: true,
-  imports: [CommonModule, SharedModule, BajajChartComponent, BarChartComponent, ChartDataMonthComponent],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })

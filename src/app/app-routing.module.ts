@@ -13,6 +13,14 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule)
+  },
+  {
     path: 'admin',
     loadChildren: () => import('./superadmin/superadmin.module').then(m => m.SuperadminModule)
   },
