@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 
 const routes: Routes =  [
   {
     path:'',
     children:[
-      {path:'login', component: LoginComponent},
+      {path:'home', component: MenuComponent},
 
     ]
   }
 ]
-
 
 @NgModule({
   declarations: [],
@@ -21,7 +20,7 @@ const routes: Routes =  [
     RouterModule.forChild(routes)
   ]
 })
-export class AuthRoutingModule {
+export class InicioRoutingModule {
   static getRoutes(): Routes{
     return routes;
   }

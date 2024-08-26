@@ -1,0 +1,19 @@
+<!-- Este archivo contiene el logo y el icono de las tres líneas -->
+<div class="m-header">
+  <a routerLinkActive="activebutton" routerLink="/landing" class="b-brand">
+    <!-- href="../../../../../inicio/landing/landing.component.html" -->
+    <img src="assets/images/logo-dark.svg" alt="" class="logo logo-lg" />
+  </a>
+  <div class="pc-h-item">
+    <a
+      href="javascript:"
+      class="pc-head-link head-link-secondary m-0 mobile-menu"
+      [ngClass]="{ on: navCollapsed }"
+      id="sidebar-hide mobile-collapse"
+      (click)="navCollapse()"
+    >
+      <i class="ti ti-menu-2"></i>
+    </a>
+  </div>
+</div>
+<!-- [ Header ] end -->
