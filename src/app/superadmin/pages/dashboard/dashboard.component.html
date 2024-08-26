@@ -1,1 +1,126 @@
 <p>dashboard works!</p>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    
+    <!-- Contenedor del Dashboard -->
+    <div class="container mx-auto my-4 p-4 bg-white rounded shadow-lg">
+
+        <!-- Sección de Encabezado -->
+        <div class="flex justify-between items-center border-b pb-2">
+            <h1 class="text-xl font-semibold">Dashboard</h1>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Descargar</button>
+        </div>
+
+        <!-- Sección de Estadísticas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <!-- Tarjeta de Estadística Individual -->
+            <div class="bg-gray-200 p-4 rounded flex flex-col items-center justify-center text-center ">
+                <span class="text-lg font-medium">Usuarios</span>
+                <span class="text-xl font-bold">8,098.32</span>
+            </div>
+            <div class="bg-gray-200 p-4 rounded flex flex-col items-center justify-center text-center">
+                <span class="text-lg font-medium">Operadores</span>
+                <span class="text-xl font-bold">987</span>
+            </div>
+            <div class="bg-gray-200 p-4 rounded flex flex-col items-center justify-center text-center">
+                <span class="text-lg font-medium">Administradores</span>
+                <span class="text-xl font-bold">91</span>
+            </div>
+            <div class="bg-gray-200 p-4 rounded flex flex-col items-center justify-center text-center">
+                <span class="text-lg font-medium">Super administradores</span>
+                <span class="text-xl font-bold">30</span>
+            </div>
+        </div>
+        
+        <!-- Sección de Gráficos -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+            <!-- Tarjeta de Gráfico de Barras -->
+            <div class="bg-white shadow-md rounded-lg p-6 w-max">
+                <h2 class="text-2xl font-bold mb-4">Tipo de población</h2>
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">tipo 1</span>
+                    <span class="text-blue-500">96.42%</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">tipo 2</span>
+                    <span class="text-blue-500">76.42%</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">tipo 3</span>
+                    <span class="text-blue-500">10.42%</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">tipo 4</span>
+                    <span class="text-blue-500">30.52%</span>
+                </div>
+                <div class="flex justify-between">
+                    <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
+                    <span class="font-semibold">tipo 5</span>
+                    <span class="text-blue-500">12.42%</span>
+                </div>
+            </div>
+
+
+            <!-- Tarjeta de Gráfico de Actividad -->
+            <div class="bg-white p-4 rounded shadow">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-lg font-semibold">Actividad</h2>
+                    <div class="flex space-x-2">
+                        <button class="px-2 py-1 bg-gray-200 rounded">Mes</button>
+                        <button class="px-2 py-1 bg-gray-200 rounded">Año</button>
+                    </div>
+                </div>
+                <!-- Aquí iría el gráfico de actividad -->
+                <div class="h-32 bg-gray-100 rounded"></div>
+            </div>
+        </div>
+
+        <!-- Sección de Top Municipios -->
+        <div class="bg-white shadow-md rounded-lg p-6 w-max">
+            <h2 class="text-2xl font-bold mb-4">Top de municipios</h2>
+            <div class="flex justify-between mb-2">
+                <span class="font-semibold">Bucaramanga</span>
+                <span class="text-blue-500">54%</span>
+            </div>
+            <div class="flex justify-between mb-2">
+                <span class="font-semibold">Floridablanca</span>
+                <span class="text-blue-500">32%</span>
+            </div>
+            <div class="flex justify-between mb-2">
+                <span class="font-semibold">Barrancabermeja</span>
+                <span class="text-blue-500">27%</span>
+            </div>
+            <div class="flex justify-between mb-2">
+                <span class="font-semibold">Girón</span>
+                <span class="text-blue-500">25%</span>
+            </div>
+            <div class="flex justify-between mb-2">
+                <span class="font-semibold">Zapatoca</span>
+                <span class="text-blue-500">12%</span>
+            </div>
+            <div class="flex justify-between">
+                <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
+                <span class="font-semibold">San Gil</span>
+                <span class="text-blue-500">15%</span>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
