@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './pages/menu/menu.component';
-
+import { LandingComponent } from './pages/landing/landing.component';
 
 const routes: Routes =  [
   {
     path:'',
     children:[
       {path:'home', component: MenuComponent},
+      {path:'landing', component: LandingComponent},
 
     ]
   }

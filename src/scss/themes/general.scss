@@ -15,10 +15,6 @@ a {
     outline: none;
     text-decoration: none;
   }
-
-  &:not([href]) {
-    color: inherit;
-  }
 }
 
 p {
