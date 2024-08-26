@@ -1,18 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/pages/login/login.component';
-import { LandingComponent } from './inicio/pages/landing/landing.component';
+import { DefaultComponent } from './superadmin/pages/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
+  { path: '', redirectTo: '/home,', pathMatch:'full'},
+  { path:'home', component: DefaultComponent},
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
@@ -22,16 +14,12 @@ const routes: Routes = [
     loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule)
   },
   {
-    path: 'admin',
+    path: 'superadmin',
     loadChildren: () => import('./superadmin/superadmin.module').then(m => m.SuperadminModule)
   },
   {
     path: 'operario',
-    loadChildren: () => import('./operario/operario.module').then(m => m.OperarioModule)
-  },
-  {
-    path: 'landing',
-    component: LandingComponent
+    loadChildren:() => import('./operario/operario.module').then(m => m.OperarioModule)
   }
 ];
 

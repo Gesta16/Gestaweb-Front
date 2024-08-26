@@ -1,6 +1,6 @@
 <!-- Este archivo hace el llamado del contenido del menú -->
-<ng-scrollbar style="height: calc(100vh - 70px)" visibility="hover">
-  <div class="navbar-content">
+<ng-scrollbar style="height: calc(100vh - 70px); " visibility="hover">
+  <div class="navbar-content mt-[30%]">
     <ul class="nav coded-inner-navbar" (clickOutside)="fireOutClick()" (mouseleave)="navMob()">
       @for (item of navigation; track item) {
         @if (item.type == 'group') {

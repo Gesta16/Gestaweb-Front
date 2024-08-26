@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 
 export interface NavigationItem {
   id: string;
@@ -18,21 +18,32 @@ export interface Navigation extends NavigationItem {
 }
 const NavigationItems = [
   {
-    id: 'dashboard',
+    id: 'default',
     title: 'Dashboard',
-    type: 'group',
-    icon: 'icon-navigation',
-    children: [
-      {
-        id: 'default',
-        title: 'Dashboard',
-        type: 'item',
-        classes: 'nav-item',
-        url: '/default',
-        icon: 'ti ti-dashboard',
-        breadcrumbs: false
-      }
-    ]
+    type: 'item',
+    classes: 'nav-item',
+    url: '/home',
+    icon: 'fas fa-user',
+    breadcrumbs: false
+
+  },
+  {
+    id: 'list-admin',
+    title: 'Administradores',
+    type: 'item',
+    classes: 'nav-item',
+    url: '/superadmin/list-admin',
+    icon: 'ti ti-dashboard',
+    breadcrumbs: false
+  },
+  {
+    id: 'list-superadmin',
+    title: 'SuperAdmin',
+    type: 'item',
+    classes: 'nav-item',
+    url: '/superadmin/list-superadmin',
+    icon: 'ti ti-dashboard',
+    breadcrumbs: false
   }
 ];
 
