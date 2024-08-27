@@ -11,9 +11,9 @@
 </head>
 
 <body class="bg-gray-100">
-    
+
     <!-- Contenedor del Dashboard -->
-    <div class="container mx-auto my-4 p-4 bg-white rounded shadow-lg">
+    <div class="container ml-[30%]  0 my-4 p-20 bg-white rounded shadow-lg ">
 
         <!-- Sección de Encabezado -->
         <div class="flex justify-between items-center border-b pb-2">
@@ -41,10 +41,10 @@
                 <span class="text-xl font-bold">30</span>
             </div>
         </div>
-        
+
         <!-- Sección de Gráficos -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
-            <!-- Tarjeta de Gráfico de Barras -->
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+           
             <div class="bg-white shadow-md rounded-lg p-6 w-max">
                 <h2 class="text-2xl font-bold mb-4">Tipo de población</h2>
                 <div class="flex justify-between mb-2">
@@ -64,15 +64,59 @@
                     <span class="text-blue-500">30.52%</span>
                 </div>
                 <div class="flex justify-between">
-                    <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
                     <span class="font-semibold">tipo 5</span>
                     <span class="text-blue-500">12.42%</span>
                 </div>
             </div>
 
 
+           
+            <div class="bg- p-4 rounded shadow w-full md:max-w-lg lg:max-w-2xl">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-lg font-semibold">Actividad</h2>
+                    <div class="flex space-x-2">
+                        <button class="px-2 py-1 bg-gray-200 rounded">Mes</button>
+                        <button class="px-2 py-1 bg-gray-200 rounded">Año</button>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded">
+                    <img src="assets/images/inicio/img-grafica-bar.png" alt="" class="">
+                </div>
+            </div>
+        </div> -->
+        <br>
+        <div class="flex flex-wrap gap-4 mt-4">
+            <div class="bg-red-500 p-0 rounded-lg flex-1 min-w-[200px] max-w-[340px]">
+                <!-- Tarjeta de Gráfico de Barras -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Tipo de población</h2>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">tipo 1</span>
+                        <span class="text-blue-500">96.42%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">tipo 2</span>
+                        <span class="text-blue-500">76.42%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">tipo 3</span>
+                        <span class="text-blue-500">10.42%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">tipo 4</span>
+                        <span class="text-blue-500">30.52%</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
+                        <span class="font-semibold">tipo 5</span>
+                        <span class="text-blue-500">12.42%</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Tarjeta de Gráfico de Actividad -->
-            <div class="bg-white p-4 rounded shadow">
+            <div class="bg-red-500 p-4 rounded shadow">
                 <div class="flex justify-between items-center mb-2">
                     <h2 class="text-lg font-semibold">Actividad</h2>
                     <div class="flex space-x-2">
@@ -81,44 +125,132 @@
                     </div>
                 </div>
                 <!-- Aquí iría el gráfico de actividad -->
-                <div class="h-32 bg-gray-100 rounded"></div>
+                <div class="bg-gray-100 rounded">
+                    <img src="assets/images/inicio/img-grafica-bar.png" alt="" class="">
+                </div>
             </div>
         </div>
 
+
+        <br><br>
         <!-- Sección de Top Municipios -->
-        <div class="bg-white shadow-md rounded-lg p-6 w-max">
-            <h2 class="text-2xl font-bold mb-4">Top de municipios</h2>
-            <div class="flex justify-between mb-2">
-                <span class="font-semibold">Bucaramanga</span>
-                <span class="text-blue-500">54%</span>
-            </div>
-            <div class="flex justify-between mb-2">
-                <span class="font-semibold">Floridablanca</span>
-                <span class="text-blue-500">32%</span>
-            </div>
-            <div class="flex justify-between mb-2">
-                <span class="font-semibold">Barrancabermeja</span>
-                <span class="text-blue-500">27%</span>
-            </div>
-            <div class="flex justify-between mb-2">
-                <span class="font-semibold">Girón</span>
-                <span class="text-blue-500">25%</span>
-            </div>
-            <div class="flex justify-between mb-2">
-                <span class="font-semibold">Zapatoca</span>
-                <span class="text-blue-500">12%</span>
-            </div>
-            <div class="flex justify-between">
-                <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
-                <span class="font-semibold">San Gil</span>
-                <span class="text-blue-500">15%</span>
+        <div class="container mx-auto p-0">
+            <div class="flex flex-wrap justify-between gap-4">
+                <div class="p-0 rounded-lg flex-1 min-w-[200px] max-w-[340px]">
+                    <div class="div-pri bg-white shadow-md rounded-lg p-6">
+                        <h2 class="text-2xl font-bold mb-4">Top de municipios</h2>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Bucaramanga</span>
+                            <span class="text-blue-500">54%</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Floridablanca</span>
+                            <span class="text-blue-500">32%</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Barrancabermeja</span>
+                            <span class="text-blue-500">27%</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Girón</span>
+                            <span class="text-blue-500">25%</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Zapatoca</span>
+                            <span class="text-blue-500">12%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
+                            <span class="font-semibold">San Gil</span>
+                            <span class="text-blue-500">15%</span>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="p-0 rounded-lg flex-1 min-w-[200px]">
+                    <div class="div-seg grid grid-cols-2 gap-3">
+                        <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="shadow-md rounded-lg">
+                        <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="shadow-md rounded-lg">
+                        <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="shadow-md rounded-lg">
+                        <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="shadow-md rounded-lg">
+                    </div>
+    
+                </div>
+    
+                <div class="bg-stale-100 p-6 shadow-md rounded-lg flex-1 min-w-[200px] items-center justify-center">
+                    <img src="assets/images/inicio/img-grafica-cir.png" alt="" class="justify-center">
+                </div>
             </div>
         </div>
-
-
-
-
     </div>
+
+    <hr>
+    <hr>
+    <br><br>
+    <div class="container mx-auto p-4">
+        <div class="flex flex-wrap justify-between gap-4">
+
+            <div class="bg-blue-500 p-0 rounded-lg flex-1 min-w-[200px]">
+                <!-- Contenido del primer contenedor -->
+                Contenedor 1
+                
+                <div class="div-pri bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Top de municipios</h2>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">Bucaramanga</span>
+                        <span class="text-blue-500">54%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">Floridablanca</span>
+                        <span class="text-blue-500">32%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">Barrancabermeja</span>
+                        <span class="text-blue-500">27%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">Girón</span>
+                        <span class="text-blue-500">25%</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold">Zapatoca</span>
+                        <span class="text-blue-500">12%</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <!-- al ultimo no se le colca el "mb-2" porque le añade espacio innecesario  -->
+                        <span class="font-semibold">San Gil</span>
+                        <span class="text-blue-500">15%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-green-500 p-6 rounded-lg flex-1 min-w-[200px]">
+                <!-- Contenido del segundo contenedor -->
+                Contenedor 2
+
+                <div class="div-seg grid grid-cols-2 gap-1">
+                    <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="img-bar">
+                    <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="img-bar">
+                    <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="img-bar">
+                    <img src="assets/images/inicio/img-grafica-linea.png" alt="" class="img-bar">
+                </div>
+
+            </div>
+
+            <div class="bg-red-500 p-6 rounded-lg flex-1 min-w-[200px] items-center justify-center">
+                <!-- Contenido del tercer contenedor -->
+                Contenedor 3
+
+                <img src="assets/images/inicio/img-grafica-cir.png" alt="" class="justify-center">
+
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 </body>
